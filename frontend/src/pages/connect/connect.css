@@ -1,0 +1,103 @@
+.connect_page {
+    min-height: 125vh;
+    background-color: #f8f5f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect_body {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.connect_content {
+    flex: 1;
+    min-width: 0;
+    margin: 20px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.connect_details {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.connect_details h1 {
+    margin-bottom: 15px;
+    color: #212529;
+    font-size: 38px;
+}
+
+.connect_details p {
+    color: #495057;
+    line-height: 1.8;
+}
+
+.contact_details {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact_drop {
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact_drop summary {
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.contact_drop:hover summary {
+    background-color: green;
+    color: white;
+}
+
+.contact_drop[open] {
+    border-color: #8eb8f5;
+    box-shadow: 0 3px 10px rgba(3, 93, 227, 0.08);
+}
+
+.contact_drop summary {
+    padding: 17px 20px;
+    background-color: #eaf2ff;
+    color: #174b88;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact_drop[open] summary {
+    background-color: #dceaff;
+    color: #092c61;
+}
+
+.contact_drop p {
+    padding: 18px 20px;
+    color: #495057;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .connect_body {
+        flex-direction: column;
+    }
+
+    .connect_content {
+        margin-top: 0;
+        padding: 28px 20px;
+    }
+
+    .connect_details h1 {
+        font-size: 30px;
+    }
+}

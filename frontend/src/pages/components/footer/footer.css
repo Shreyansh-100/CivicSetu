@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 10px 50px;
+    background-color: #092c61;
+    color: white;
+    margin-top: 0px;
+}
+
+.footer_left,
+.footer_right {
+    width: 50%;
+    text-align: center;
+}
+
+.footer h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+}
+
+.footer p {
+    margin: 3px 0;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+.link {
+    color: white;
+}

@@ -1,0 +1,44 @@
+# Django Backend
+django
+djangorestframework
+
+# Database
+psycopg[binary]
+pgvector
+
+# Environment Variables
+python-decouple
+
+# Media Handling
+pillow
+
+# AI Orchestration
+langgraph
+
+# LLM Provider
+google-genai
+
+# Background Tasks
+celery
+redis
+
+# HTTP Requests
+requests
+
+# Geolocation / GIS
+geopy
+
+# Data Validation
+pydantic
+
+# API Server (Production)
+gunicorn
+
+# CORS for Next.js Frontend
+django-cors-headers
+
+# File Uploads / Storage
+django-storages
+
+# Development Utilities
+ipython

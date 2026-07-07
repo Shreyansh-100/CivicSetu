@@ -1,0 +1,116 @@
+/* Entire Page */
+
+.dash_page{
+    min-height:125vh;
+
+    background-color:#F8F5F0;
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* Header */
+
+
+
+
+/* Body */
+
+.body_container{
+    flex:1;
+
+    display:flex;
+}
+
+
+/* Sidebar */
+
+
+
+/* Main Content */
+
+.main_content{
+    flex:1;
+
+    margin:20px;
+
+    padding:40px;
+
+    background-color:white;
+
+    border-radius:12px;
+
+    box-shadow:0px 4px 12px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+}
+
+
+/* Heading */
+
+.main_content h1{
+    font-size:38px;
+
+    color:#212529;
+}
+
+
+/* Paragraphs */
+
+.intro_text{
+    max-width:700px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:#495057;
+}
+
+
+.caution_text{
+    max-width:700px;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    color:#6C757D;
+}
+
+
+/* Lodge Button */
+
+.lodge_btn{
+    margin-top:15px;
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background-color:#035de3;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:transform 0.5s;
+}
+
+.lodge_btn:hover{
+    background-color:#092c61;
+    transform: scale(1.2);
+}

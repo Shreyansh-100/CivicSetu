@@ -1,0 +1,59 @@
+.header {
+    height: 100px;
+    background-color: white;
+   border-top: 25px solid #092c61;
+    border-bottom: 1px solid #dddddd;
+
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+}
+.site_branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #212529;
+    text-decoration: none;
+}
+
+.site_branding_logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.site_branding_text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.site_branding_english {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.site_branding_hindi {
+    margin-top: 3px;
+    color: #495057;
+    font-size: 15px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0 18px;
+    }
+
+    .site_branding_logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .site_branding_english {
+        font-size: 13px;
+    }
+
+    .site_branding_hindi {
+        font-size: 12px;
+    }
+}
