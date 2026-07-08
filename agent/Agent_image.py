@@ -43,7 +43,7 @@ def check_auth(img,category):
     client=genai.Client(api_key=api_key)
     my_file=client.files.upload(file=img)    
     
-    prompt="""consider yourself highly proficient in finding things in images. 
+    prompt=f"""consider yourself highly proficient in finding things in images. 
     You dont have to analyse the image and nor do you have to run it against the input text. You have to form a confidence score using the following means:-
     a)match whether the keyword mentioned in the text exists in the image or not.for example:if the text is traffic lights failure, the keyword here is traffic light.search for it
     Give this a 75 percentage weightage

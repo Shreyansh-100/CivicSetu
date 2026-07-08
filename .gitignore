@@ -1,1 +1,3 @@
+agent/.env
 **./env
+agent/complaint_embeddings.npy

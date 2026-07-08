@@ -53,5 +53,5 @@ def output(input_string):
 
 
 if __name__ == "__main__":
-    input_string = "traffic lights"
+    input_string = "car parked at my gym's gate since the last 2 weeks"
     print(json.dumps(output(input_string), indent=2))
