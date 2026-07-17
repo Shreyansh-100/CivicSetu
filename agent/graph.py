@@ -79,12 +79,8 @@ graph.add_edge("image","route_complaint")
 
 graph.add_edge("response",END)
 graph.add_edge("route_complaint",END)
-
-
-
 app=graph.compile()
-res=app.invoke({"complaint":"fallen tree","img_path":"/mnt/c/Users/2.LAPTOP-GMFP48KM/Downloads/test1.jpg"})
-print(res)
+
 
 
 
