@@ -1,3 +1,16 @@
+# Environment files
 agent/.env
-**./env
+backend/portal/portal/.env
+# Ignore all .env files anywhere
+**/.env
+# VS Code
+.vscode/
+**/.vscode/
+# Python cache
+__pycache__/
+**/__pycache__/
+# Numpy files
 agent/complaint_embeddings.npy
+# SQLite
+*.sqlite3
+backend/portal/db.sqlite3

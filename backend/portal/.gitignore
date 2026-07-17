@@ -1,0 +1,3 @@
+portal/__pycache__
+portal/.env
+db.sqlite

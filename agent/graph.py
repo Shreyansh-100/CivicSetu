@@ -29,13 +29,14 @@ def input(state: AgentState) ->AgentState:
 
     return state
 
-def image_check(state:AgentState) -> AgentState:
+def image_check(state:AgentState):
     res=image_agent.output(state['img_path'],state['cat'])
+    return{
+    'conf_score':res['conf_score'],
+    'ai_flag':res['flag'],
+    }
 
-    state['conf_score']=res['conf_score']
-    state['ai_flag']=res['flag']
 
-    return state
 
 def route_complaint(state: AgentState) ->AgentState :
     res= routing_agent.route_complaint(
@@ -49,7 +50,7 @@ def route_complaint(state: AgentState) ->AgentState :
     state['verification']=res['verification']
     state['priority']=res['priority']
     state['label']=res['label']
-    state['action']=res['recommend_actions']
+    state['action']=res['recommended_actions']
     
     return state
 
@@ -59,8 +60,10 @@ def respond(state:AgentState) ->AgentState :
         state['cat'],
         state['dept']
     )
-    state['user_response']=res
-    return state
+    return{
+
+    'user_response':res}
+    
 
 graph=StateGraph(AgentState)
 graph.add_node("input",input)

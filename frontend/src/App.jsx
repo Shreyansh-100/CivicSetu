@@ -6,7 +6,7 @@ import Connect from './pages/connect/connect'
 function App()
 {
   return(
-    <Connect/>
+    <Dash/>
   )
 }
 
