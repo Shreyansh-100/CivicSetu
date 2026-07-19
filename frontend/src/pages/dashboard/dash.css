@@ -114,3 +114,25 @@
     background-color:#092c61;
     transform: scale(1.2);
 }
+
+.logout_btn {
+    padding: 12px 28px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    background-color: white;
+
+    color: #1f2937;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.logout_btn:hover {
+    background-color: #f1f5f9;
+}

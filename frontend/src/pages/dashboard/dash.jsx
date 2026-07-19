@@ -2,7 +2,10 @@ import "./dash.css";
 import Sidebar from '../components/sidebar/sidebar'
 import Header from "../components/header/header";
 import Footer from '../components/footer/footer'
-function Dash() {
+
+
+function Dash()
+{
     return (
         <div className="dash_page">
 
@@ -14,9 +17,7 @@ function Dash() {
 
                 <main className="main_content">
 
-                    <h1>
-                        Welcome
-                    </h1>
+                    
 
                     <p className="intro_text">
                         Welcome to the Civic Grievance Portal.
@@ -35,6 +36,10 @@ function Dash() {
 
                     <button className="lodge_btn">
                         Lodge Complaint
+                    </button>
+
+                    <button className="logout_btn">
+                        Logout
                     </button>
 
                 </main>
